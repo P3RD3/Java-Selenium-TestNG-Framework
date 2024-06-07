@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite">
+    <listeners>
+        <listener class-name="org.test.utilities.SuiteListener">
+
+        </listener>
+    </listeners>
+    <test thread-count="5" name="Test Suite 1">
+        <parameter name="browser" value="chrome">
+
+        </parameter>
+        <classes>
+            <class name="org.test.base.baseTest">
+
+            </class>
+            <class name="org.test.testcases.loginTest">
+
+            </class>
+        </classes>
+    </test>
+</suite>
